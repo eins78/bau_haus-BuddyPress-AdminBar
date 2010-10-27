@@ -72,7 +72,7 @@ class cunyj_buddypress
 	function logo() {
 		global $bp;
 	
-		echo '<li id="bp-adminbar-logo" class="no-arrow"><a href="' . $bp->root_domain . '/">bau-ha.us</a></li>';
+		echo '<li id="bp-adminbar-logo" class="no-arrow"><a href="' . $bp->root_domain . '/">bau-ha.us/</a></li>';
 		
 	}
 	
