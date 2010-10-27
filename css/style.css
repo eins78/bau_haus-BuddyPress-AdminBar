@@ -78,6 +78,10 @@ body {
 	background-color: #dbdbdb !important;
 }
 
+#wp-admin-bar ul.main-nav ul {
+	border-top: none;
+}
+
 #wp-admin-bar ul li ul {
 	background-color: #dbdbdb !important;
 	border: 1px solid #AAA !important;
