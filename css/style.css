@@ -80,7 +80,7 @@ body {
 
 #wp-admin-bar ul li ul {
 	background-color: #dbdbdb !important;
-	border: 1px solid #AAA;
+	border: 1px solid #AAA !important;
 	margin-left: -1px;
 }
 
