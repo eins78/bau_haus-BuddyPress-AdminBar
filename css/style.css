@@ -17,10 +17,12 @@ body {
 }
 
 #wp-admin-bar .padder {
-	height: 30px !important;
+	height: 29px !important;
+	background: none !important;
 }
 
 #wp-admin-bar .padder .main-nav li#bp-adminbar-logo a {
+	text-shadow: #F3F3F3 1px 1px 1px;
 	color: #36a4b6;
 }
 
@@ -31,10 +33,11 @@ body {
 
 #wp-admin-bar .padder .main-nav li a {
 	font-size: 13px;
+	color: #333;
 	letter-spacing: 0.5px;
 	font-weight: lighter;
-	padding-top: 8px !important;
-	padding-bottom: 8px !important;
+	padding-top: 7px !important;
+	padding-bottom: 7px !important;
 	padding-left: 17px;
 	padding-right: 17px;
 	color: #CCCCCC;
@@ -85,4 +88,8 @@ body {
 #wp-admin-bar .padder ul li.align-right a img {
 	margin-top: -5px;
 	border: 1px solid #3E3E3E;
+}
+
+#wp-admin-bar * {
+	z-index: 999999 !important; /* it's the battle of the z-index! */
 }
