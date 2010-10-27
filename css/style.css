@@ -10,6 +10,10 @@ body {
 	background-color: #666666;
 }
 
+#wp-admin-bar a:hover {
+	border: none;
+}
+
 #wp-admin-bar .padder {
 	height: 30px !important;
 }
