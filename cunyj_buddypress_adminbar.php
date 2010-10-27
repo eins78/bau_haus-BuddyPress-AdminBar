@@ -38,9 +38,11 @@ class cunyj_buddypress
 		// Our new glorious navigation bar
 		add_action( 'bp_adminbar_menus', array(&$this, 'logo'), 1 );		
 		add_action( 'bp_adminbar_menus', array(&$this, 'activity'), 1 );
+		add_action( 'bp_adminbar_menus', array(&$this, 'katalog'), 5 );
 		add_action( 'bp_adminbar_menus', array(&$this, 'blogs'), 6 );
-		add_action( 'bp_adminbar_menus', array(&$this, 'groups'), 7 );
-		add_action( 'bp_adminbar_menus', array(&$this, 'members'), 8 );
+		add_action( 'bp_adminbar_menus', array(&$this, 'wiki'), 7 );
+		add_action( 'bp_adminbar_menus', array(&$this, 'groups'), 8 );
+		add_action( 'bp_adminbar_menus', array(&$this, 'members'), 9 );
 		add_action( 'bp_adminbar_menus', 'bp_adminbar_notifications_menu', 15 );
 		//add_action( 'bp_adminbar_menus', array(&$this, 'authors'), 12 );
 		add_action( 'bp_adminbar_menus', array(&$this, 'profile'), 100 );
@@ -73,6 +75,20 @@ class cunyj_buddypress
 		global $bp;
 	
 		echo '<li id="bp-adminbar-logo" class="no-arrow"><a href="' . $bp->root_domain . '/">bau-ha.us/</a></li>';
+		
+	}
+	
+	function katalog() {
+		global $bp;
+	
+		echo '<li id="bp-adminbar-katalog"><a href="http://katalog.bau-ha.us/">KATALOG</a></li>';
+		
+	}
+	
+	function wiki() {
+		global $bp;
+	
+		echo '<li id="bp-adminbar-katalog"><a href="http://web.uni-weimar.de/medien/wiki/">Wiki</a></li>';
 		
 	}
 	
@@ -191,7 +207,7 @@ class cunyj_buddypress
 				return false;
 			}
 		
-		echo '<li id="bp-adminbar-members-link" class="no-arrow"><a href="' . bp_get_root_domain() . '/' . BP_MEMBERS_SLUG .'">Members</a></li>';
+		echo '<li id="bp-adminbar-members-link" class="no-arrow"><a href="' . bp_get_root_domain() . '/' . BP_MEMBERS_SLUG .'">People</a></li>';
 		
 	}
 	
