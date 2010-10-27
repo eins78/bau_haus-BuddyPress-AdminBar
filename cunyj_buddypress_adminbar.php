@@ -82,7 +82,7 @@ class cunyj_buddypress
 		if (!is_user_logged_in()) {
 			return false;
 		}
-		echo '<li id="bp-adminbar-activity" class="no-arrow"><a href="' . $bp->root_domain . '/activity/">Activity</a></li>';
+		echo '<li id="bp-adminbar-activity" class="no-arrow"><a href="' . $bp->root_domain . '/">Stream</a></li>';
 		
 	}
 	
