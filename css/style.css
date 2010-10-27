@@ -82,6 +82,10 @@ body {
 	border-top: none;
 }
 
+#wp-admin-bar ul.main-nav ul li {
+	background: url(http://bau-ha.us/bau_haus-adminbar_arrow.png) no-repeat 88% 53%;
+}
+
 #wp-admin-bar ul li ul {
 	background-color: #dbdbdb !important;
 	border: 1px solid #AAA !important;
