@@ -96,7 +96,7 @@ class cunyj_buddypress
 		global $bp;
 		
 		if (!is_user_logged_in()) {
-			return false;
+		echo '<li id="bp-adminbar-activity" class="no-arrow"><a href="' . $bp->root_domain . '/">Stream</a></li>';
 		}
 		echo '<li id="bp-adminbar-activity" class="no-arrow"><a href="' . $bp->root_domain . '/">Stream</a></li>';
 		
@@ -118,14 +118,14 @@ class cunyj_buddypress
 		global $bp;
 
 		if ( !is_user_logged_in() || !function_exists('bp_blogs_install') )
-			return false;
+		echo '<li id="bp-adminbar-blogs-menu" class="no-arrow"><a href="http://bau-ha.us/blogs">Blogs</a></li>';
 
 		if ( !$blogs = wp_cache_get( 'bp_blogs_of_user_' . $bp->loggedin_user->id . '_inc_hidden', 'bp' ) ) {
 			$blogs = bp_blogs_get_blogs_for_user( $bp->loggedin_user->id, true );
 			wp_cache_set( 'bp_blogs_of_user_' . $bp->loggedin_user->id . '_inc_hidden', $blogs, 'bp' );
 		}
 
-		echo '<li id="bp-adminbar-blogs-menu"><a href="' . bp_get_root_domain() . '/blogs/">';
+		echo '<li id="bp-adminbar-blogs-menu" class="no-arrow"><a href="' . bp_get_root_domain() . '/blogs/">';
 
 		_e( 'Blogs', 'buddypress' );
 
