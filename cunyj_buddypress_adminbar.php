@@ -93,7 +93,7 @@ class cunyj_buddypress
 			return false;
 		}
 		
-		echo '<li id="bp-adminbar-activity" class="no-arrow"><a href="http://wiki.journalism.cuny.edu/Getting%20a%20Fast%20Start">Getting a Fast Start: CLASS OF 2011</a></li>';
+		echo '';
 		
 	}
 	
